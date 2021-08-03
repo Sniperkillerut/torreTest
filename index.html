@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Skills</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <button type='button' onclick="ifClicked()">Submit</button>
+
+        <script type="text/javascript">
+            function ifClicked() {
+                    var guidesValue = $("input:radio[name=search]:checked").val();
+                    let endpoint='http://localhost:6663/skills/'
+                    let method='GET'
+                    var http = new XMLHttpRequest();
+                    http.onreadystatechange = function () {
+                        if (this.readyState === 4 && this.status === 200) {
+                            document.getElementById('json-input').innerText = this.responseText
+                        }
+                    };
+                    http.open(method, endpoint, false);
+                    http.send();
+            }
+        </script>
+        <textarea id="json-input" autocomplete="off">{}</textarea>
+    </body>
+</html>

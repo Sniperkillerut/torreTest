@@ -3,3 +3,5 @@
 2021-08-02 13:35:21 - testing simple get-post webpage
 2021-08-02 18:07:01 - still making get-post page, more issues with piping and getting external API with promises than expected (also had work to do)
 2021-08-02 19:43:21 - finally overcame the hurdles, async to the rescue
+2021-08-03 15:22:45 - started work today at 3pm, forgot to log
+2021-08-03 15:30:22 - what I wanted to do is bigger and takes longer to process than I expected, have to think in other thing
