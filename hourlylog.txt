@@ -1,1 +1,5 @@
 2021-08-02 10:31:05 - repo init
+2021-08-02 11:02:08 - getting familiar with the API
+2021-08-02 13:35:21 - testing simple get-post webpage
+2021-08-02 18:07:01 - still making get-post page, more issues with piping and getting external API with promises than expected (also had work to do)
+2021-08-02 19:43:21 - finally overcame the hurdles, async to the rescue
