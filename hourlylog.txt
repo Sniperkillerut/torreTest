@@ -9,3 +9,4 @@
 2021-08-03 17:11:57 - just timed the skills function, 5 minutes to download all the data, could take less if the API would give just the "skills" she way I need them
 2021-08-04 08:31:39 - yesterday stopped working around 9pm, forgot to log it, worked 20 minutes now morning, gotta go work on current company
 2021-08-04 08:32:40 - making a commit just to show progress, is ugly still
+2021-08-04 11:11:47 - adding jquery and organizing folders

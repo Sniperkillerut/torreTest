@@ -26,6 +26,9 @@ header{
     width: 100%;
     height: 4em;
     display: inline-flex;
+    position: fixed;
+    top: 0;
+    box-shadow:0 1px 3px rgba(0,0,0,.2),0 1px 1px rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
 }
 .menu{
     /* background-color: yellow; */
@@ -73,28 +76,29 @@ header{
     left: -24px;
 }
 .content{
-    background-color: purple;
+    background-color: #27292D !important;
     width: 100%;
     height: auto;
     align-items: center;
     text-align: center;
         min-height: 100%;
+        margin-top: 4em;
 }
 .center{
-    background-color: skyblue;
+    /* background-color: skyblue; */
         width: 90%;
     max-width: 1000px;;
     margin: auto;
     display: inline-block;
 }
 .left{
-    background-color: coral;
+    /* background-color: coral; */
     width: 49%;
     margin: 0;
     display: inline-block;
 }
 .right{
-    background-color: darkorchid;
+    /* background-color: darkorchid; */
     width: 49%;
     margin: 0;
     display: inline-block;
@@ -112,10 +116,10 @@ header{
     padding: 10px;
 }
 .left li:nth-child(2n) {
-    background-color: red;
+    /* background-color: red; */
 }
 footer{
-    background-color: magenta;
+    background-color: #27292D !important;
     margin-bottom: 0px;
     height: 4em;
 }
