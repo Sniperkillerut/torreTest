@@ -5,3 +5,7 @@
 2021-08-02 19:43:21 - finally overcame the hurdles, async to the rescue
 2021-08-03 15:22:45 - started work today at 3pm, forgot to log
 2021-08-03 15:30:22 - what I wanted to do is bigger and takes longer to process than I expected, have to think in other thing
+2021-08-03 16:58:11 - discovered aggregate=true which could had made everything easier but actually is not what I need, going to use offline jsons for this and api to update every few hours or something
+2021-08-03 17:11:57 - just timed the skills function, 5 minutes to download all the data, could take less if the API would give just the "skills" she way I need them
+2021-08-04 08:31:39 - yesterday stopped working around 9pm, forgot to log it, worked 20 minutes now morning, gotta go work on current company
+2021-08-04 08:32:40 - making a commit just to show progress, is ugly still

@@ -1,26 +1,339 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Skills</title>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/public/reset.css">
+        <link rel="stylesheet" type="text/css" href="/public/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,400italic,900|Material+Icons&amp;display=swap" media="all">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>Torre Most Sougth Skills</title>
     </head>
     <body>
-        <button type='button' onclick="ifClicked()">Submit</button>
-
-        <script type="text/javascript">
-            function ifClicked() {
-                    var guidesValue = $("input:radio[name=search]:checked").val();
-                    let endpoint='http://localhost:6663/skills/'
-                    let method='GET'
-                    var http = new XMLHttpRequest();
-                    http.onreadystatechange = function () {
-                        if (this.readyState === 4 && this.status === 200) {
-                            document.getElementById('json-input').innerText = this.responseText
-                        }
-                    };
-                    http.open(method, endpoint, false);
-                    http.send();
-            }
-        </script>
-        <textarea id="json-input" autocomplete="off">{}</textarea>
+        <header>
+            <div class="menu">
+                <button type="button" class="md-button md-icon-button md-theme-dark" style="font-size: 15px;font-style: normal;">
+                    <div class="md-ink-ripple">
+                        <i aria-hidden="true" class="md-icon md-theme-dark material-icons" style="font-size: 24px;line-height: 0.9;font-weight: 400;letter-spacing: -0.041em;font-style: normal;">menu</i>
+                        <div class="md-ripple md-fadeout md-active" style="width: 40px; height: 40px; top: 4603px; left: -4px;"></div>
+                    </div>
+                </button>
+            </div>
+            <div class="title">
+                <h1>Torre</h1>
+            </div>
+            <div class="icons">
+                <ul class="ulicons">
+                    <li>
+                        <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                            <div class="hexagon-border hexagon-border--no-margins"></div>
+                            <div class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                <span>
+                                    <a href="">1</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                            <div class="hexagon-border hexagon-border--no-margins"></div>
+                            <div class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                <span>
+                                    <a href="">2</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                            <div class="hexagon-border hexagon-border--no-margins"></div>
+                            <div class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                <span>
+                                    <a href="">3</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                            <div class="hexagon-border hexagon-border--no-margins"></div>
+                            <div class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                <span>
+                                    <a href="">4</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                            <div class="hexagon-border hexagon-border--no-margins"></div>
+                            <div class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                <span>
+                                    <a href="">5</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                            <div class="hexagon-border hexagon-border--no-margins"></div>
+                            <div class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                <span>
+                                    <a href="">6</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                            <div class="hexagon-border hexagon-border--no-margins"></div>
+                            <div class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                <span>
+                                    <a href="">7</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                            <div class="hexagon-border hexagon-border--no-margins"></div>
+                            <div class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                <span>
+                                    <a href="">8</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                            <div class="hexagon-border hexagon-border--no-margins"></div>
+                            <div class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                <span>
+                                    <a href="">9</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="content">
+            <h2>Torre Most Sougth Skills</h2>
+            <div class="center">
+                <div class="left">
+                    <h3>Experience required</h3>
+                    <ul>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">1</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">3</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">4</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">5</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">6</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">7</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">8</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">9</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">10</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <h3>Potential to Develop</h3>
+                    <ul>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">1</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">2</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">3</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">4</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">5</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">6</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">7</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">8</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">9</a>
+                        </li>
+                        <li>
+                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
+                                <div class="hexagon-border hexagon-border--no-margins"></div>
+                                <div
+                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
+                                    <span>I</span>
+                                </div>
+                            </div>
+                            <a href="">10</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer>Torre</footer>
     </body>
 </html>

@@ -1,14 +1,16 @@
 var express = require('express')
 var router = express.Router()
+const fs = require('fs');
 const { pipeline } = require('stream');
 const got = require('got');
 const { json } = require('express');
-const { lchmodSync } = require('fs');
+const { lchmodSync, fstat } = require('fs');
 router.use(function timeLog(req, res, next) {
     console.log('Time: ', Date.now())
     next()
 })
 
+//Skills Downloader, TODO: every few hours update the file
 router.get('/', async function (req, res, next) {
     if (req.query) {
         //get the first and last name from the query string
@@ -20,7 +22,7 @@ router.get('/', async function (req, res, next) {
         var ptd = {};
         var exp = {};
         var next = 'null'
-        var dir='https://search.torre.co/opportunities/_search/?size=5000'
+        var dir ='https://search.torre.co/opportunities/_search/?size=5000&aggregate=false'
         while (next != null) {
             let data
             if (next==='null') {
@@ -34,27 +36,23 @@ router.get('/', async function (req, res, next) {
                     }
                 }).json()
             }
-            next=data.pagination.next
+            next = data.pagination.next
             data.results.forEach(element => {
-                element.skills.forEach(element => {
-                    if (element.proficiency == 'potential-to-develop') {
-                        ptd[element.name]??=0
-                        ptd[element.name]++
+                element.skills.forEach(element2 => {
+                    if (element2.proficiency == 'potential-to-develop') {
+                        ptd[element2.name]??=0
+                        ptd[element2.name]++
                     }
                     else {
-                        exp[element.name]??= 0
-                        exp[element.name]++
+                        exp[element2.name]??= 0
+                        exp[element2.name]++
                     }
                 });
             });
         }
-        // arr.reduce((acc, curr) => {
-        //     acc[curr] ??= {[curr]: 0};
-        //     acc[curr][curr]++;
-        //     return acc;
-        // }, {});
-        const mergedObject = {ptd,exp};
 
+        const mergedObject = {ptd,exp};
+        fs.writeFileSync("./public/skills.json",JSON.stringify(mergedObject))
         res.json(mergedObject)
     }
 })
