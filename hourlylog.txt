@@ -11,3 +11,4 @@
 2021-08-04 08:32:40 - making a commit just to show progress, is ugly still
 2021-08-04 11:11:47 - adding jquery and organizing folders
 2021-08-04 14:06:39 - time to eat, so.. commit and almost done, just some icons to go
+2021-08-04 16:23:36 - alright, heroku finally working, the app is done, can still make it better, but the basic function is in, hope you like this
