@@ -21,9 +21,13 @@ app.get('/', (req, res) => {
     // res.end();
     // res.send('Successful response.');
 });
-app.get('/home.html', (req, res) => {
+app.get('/home', (req, res) => {
     //if the url path is home.html then get the home.html file from public directory
         res.sendFile( __dirname + "/" + "home.html" );
+})
+app.get('/fetchskills', (req, res) => {
+    //if the url path is home.html then get the home.html file from public directory
+        res.sendFile( __dirname + "/" + "skills.html" );
 })
 
 var bio = require('./bio')
@@ -32,6 +36,8 @@ var opportunity = require('./opportunity')
 app.use('/opportunity', opportunity)
 var skills = require('./skills')
 app.use('/skills', skills)
+var getskills = require('./getskills')
+app.use('/getskills', getskills)
 
 var server = app.listen(6663, function () {
     var host = server.address().address

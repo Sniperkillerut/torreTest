@@ -51,8 +51,27 @@ router.get('/', async function (req, res, next) {
             });
         }
 
-        const mergedObject = {ptd,exp};
-        fs.writeFileSync("./public/skills.json",JSON.stringify(mergedObject))
+        // Create items array
+        var ptds = Object.keys(ptd).map(function(key) {
+        return [key, ptd[key]];
+        });
+        // Sort the array based on the second element
+        ptds.sort(function(first, second) {
+        return second[1] - first[1];
+        });
+        // Create items array
+        var exps = Object.keys(exp).map(function(key) {
+        return [key, exp[key]];
+        });
+        // Sort the array based on the second element
+        exps.sort(function(first, second) {
+        return second[1] - first[1];
+        });
+        // Create a new array with only the first 5 items
+        // console.log(items.slice(0, 5));
+
+        const mergedObject = {ptds,exps};
+        fs.writeFileSync("./json/skills.json",JSON.stringify(mergedObject))
         res.json(mergedObject)
     }
 })

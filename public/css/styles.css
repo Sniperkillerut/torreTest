@@ -1,145 +1,185 @@
-html{
+html {
     height: 100%;
     width: 100%;
 }
-body{
+
+body {
     background-color: #010101;
     height: 100%;
     width: 100%;
     color: white;
     font-family: 'Muli';
 }
+
 /* h1{
     font-size: 4em;
 } */
-h2{
-   font-size: 3em;
-       padding: 20px
+h2 {
+    font-size: 3em;
+    padding: 20px
 }
-h3{
+
+h3 {
     font-size: 2em;
     margin: 15px 0;
 }
-header{
-        background-color: #27292D !important;
+
+header {
+    background-color: #27292D !important;
     color: rgba(255, 255, 255, 0.65);
     width: 100%;
     height: 4em;
     display: inline-flex;
     position: fixed;
     top: 0;
-    box-shadow:0 1px 3px rgba(0,0,0,.2),0 1px 1px rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2), 0 1px 1px rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+    z-index: 10;
 }
-.menu{
+
+.menu {
     /* background-color: yellow; */
     height: 100%;
     width: 4em;
     margin-left: 0px;
     font-family: 'Material Icons';
 }
-.title{
+
+.title {
     /* background-color: lime; */
     margin: auto auto auto 1em;
     font-size: 2.5em;
 }
-.icons{
+
+.icons {
     /* background-color: blue; */
     margin: auto 0px;
 }
-.ulicons{
- list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: inline-flex;
-      height: 4em;
+
+.ulicons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-flex;
+    height: 4em;
 }
+
 .ulicons>li {
-  /* float: left; */
-  /* background-color: #333333; */
-  margin: 0 24px;
-  position: relative;
+    /* float: left; */
+    /* background-color: #333333; */
+    margin: 0 24px;
+    position: relative;
 }
+
 .ulicons>li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
 }
+
 .ulicons>li a:hover {
-  background-color: #555555;
+    background-color: #555555;
 }
-.ulicons>li>.category-card__organization{
+
+.ulicons>li>.category-card__organization {
     --size: 50px;
     top: -10px;
     left: -24px;
 }
-.content{
+
+.content {
     background-color: #27292D !important;
     width: 100%;
     height: auto;
     align-items: center;
     text-align: center;
-        min-height: 100%;
-        margin-top: 4em;
+    min-height: 100%;
+    margin-top: 4em;
 }
-.center{
+
+.center {
     /* background-color: skyblue; */
-        width: 90%;
-    max-width: 1000px;;
+    width: 90%;
+    max-width: 1000px;
     margin: auto;
-    display: inline-block;
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: space-between;
 }
-.left{
-    /* background-color: coral; */
+
+.section {
+    box-shadow: rgb(56, 59, 64) -2px -2px 6px 0px, rgba(0, 0, 0, 0.24) 6px 6px 6px 0px;
     width: 49%;
     margin: 0;
     display: inline-block;
+    padding-bottom: 30px;
+    border-radius: 4px;
 }
-.right{
-    /* background-color: darkorchid; */
-    width: 49%;
-    margin: 0;
-    display: inline-block;
+.section ul{
+    margin-top: 30px;
 }
+
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .right,.left{
-    width: 100%;
-  }
+
+    /* For mobile phones: */
+    .section {
+        width: 100%;
+    }
+
+    .center {
+        display: inline-block;
+    }
 }
-.center li{
+
+.center li {
     list-style-position: inside;
     position: relative;
     height: 60px;
     padding: 10px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    display: flex;
 }
-.left li:nth-child(2n) {
-    /* background-color: red; */
+.center a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.65);
 }
-footer{
+.left a{
+    padding-left: 80px;
+}
+.right a{
+    padding-right: 80px;
+}
+footer {
     background-color: #27292D !important;
     margin-bottom: 0px;
     height: 4em;
 }
 
 
-.left .category-card__organization{
-    left: -5px;
+.left .category-card__organization {
+    left: 5px;
 }
-.left li:nth-child(2n) .category-card__organization{
-    left: 37px;
+
+.left li:nth-child(2n) .category-card__organization {
+    left: 47px;
 }
-.right .category-card__organization{
-    right: -5px;
+
+.right .category-card__organization {
+    right: 5px;
 }
-.right li:nth-child(2n) .category-card__organization{
-    right: 37px;
+
+.right li:nth-child(2n) .category-card__organization {
+    right: 47px;
 }
+
 .entity-picture--is-hexagon .hexagon-border--no-margins {
     margin: auto;
 }
+
 .category-card__organization {
     top: -25px;
     --size: 100px;
@@ -147,6 +187,7 @@ footer{
     position: absolute;
     z-index: 2;
 }
+
 .entity-picture--is-hexagon .hexagon-border {
     /* position: absolute;
     top: 0;
@@ -154,13 +195,15 @@ footer{
     width: var(--size);
     height: var(--size); */
     margin: 16px auto;
-    clip-path: polygon(45% 1.33975%,46.5798% .60307%,48.26352% .15192%,50% 0,51.73648% .15192%,53.4202% .60307%,55% 1.33975%,89.64102% 21.33975%,91.06889% 22.33956%,92.30146% 23.57212%,93.30127% 25%,94.03794% 26.5798%,94.48909% 28.26352%,94.64102% 30%,94.64102% 70%,94.48909% 71.73648%,94.03794% 73.4202%,93.30127% 75%,92.30146% 76.42788%,91.06889% 77.66044%,89.64102% 78.66025%,55% 98.66025%,53.4202% 99.39693%,51.73648% 99.84808%,50% 100%,48.26352% 99.84808%,46.5798% 99.39693%,45% 98.66025%,10.35898% 78.66025%,8.93111% 77.66044%,7.69854% 76.42788%,6.69873% 75%,5.96206% 73.4202%,5.51091% 71.73648%,5.35898% 70%,5.35898% 30%,5.51091% 28.26352%,5.96206% 26.5798%,6.69873% 25%,7.69854% 23.57212%,8.93111% 22.33956%,10.35898% 21.33975%);
-    -webkit-clip-path: polygon(45% 1.33975%,46.5798% .60307%,48.26352% .15192%,50% 0,51.73648% .15192%,53.4202% .60307%,55% 1.33975%,89.64102% 21.33975%,91.06889% 22.33956%,92.30146% 23.57212%,93.30127% 25%,94.03794% 26.5798%,94.48909% 28.26352%,94.64102% 30%,94.64102% 70%,94.48909% 71.73648%,94.03794% 73.4202%,93.30127% 75%,92.30146% 76.42788%,91.06889% 77.66044%,89.64102% 78.66025%,55% 98.66025%,53.4202% 99.39693%,51.73648% 99.84808%,50% 100%,48.26352% 99.84808%,46.5798% 99.39693%,45% 98.66025%,10.35898% 78.66025%,8.93111% 77.66044%,7.69854% 76.42788%,6.69873% 75%,5.96206% 73.4202%,5.51091% 71.73648%,5.35898% 70%,5.35898% 30%,5.51091% 28.26352%,5.96206% 26.5798%,6.69873% 25%,7.69854% 23.57212%,8.93111% 22.33956%,10.35898% 21.33975%);
+    clip-path: polygon(45% 1.33975%, 46.5798% .60307%, 48.26352% .15192%, 50% 0, 51.73648% .15192%, 53.4202% .60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);
+    -webkit-clip-path: polygon(45% 1.33975%, 46.5798% .60307%, 48.26352% .15192%, 50% 0, 51.73648% .15192%, 53.4202% .60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);
     background-color: #5e626b;
 }
+
 .entity-picture--is-hexagon .hexagon-border--no-margins {
     margin: auto;
 }
+
 .entity-picture--is-hexagon .hexagon-border {
     position: absolute;
     /* top: 0; */
@@ -168,28 +211,32 @@ footer{
     width: var(--size);
     height: var(--size);
     margin: 16px auto;
-    clip-path: polygon(45% 1.33975%,46.5798% .60307%,48.26352% .15192%,50% 0,51.73648% .15192%,53.4202% .60307%,55% 1.33975%,89.64102% 21.33975%,91.06889% 22.33956%,92.30146% 23.57212%,93.30127% 25%,94.03794% 26.5798%,94.48909% 28.26352%,94.64102% 30%,94.64102% 70%,94.48909% 71.73648%,94.03794% 73.4202%,93.30127% 75%,92.30146% 76.42788%,91.06889% 77.66044%,89.64102% 78.66025%,55% 98.66025%,53.4202% 99.39693%,51.73648% 99.84808%,50% 100%,48.26352% 99.84808%,46.5798% 99.39693%,45% 98.66025%,10.35898% 78.66025%,8.93111% 77.66044%,7.69854% 76.42788%,6.69873% 75%,5.96206% 73.4202%,5.51091% 71.73648%,5.35898% 70%,5.35898% 30%,5.51091% 28.26352%,5.96206% 26.5798%,6.69873% 25%,7.69854% 23.57212%,8.93111% 22.33956%,10.35898% 21.33975%);
-    -webkit-clip-path: polygon(45% 1.33975%,46.5798% .60307%,48.26352% .15192%,50% 0,51.73648% .15192%,53.4202% .60307%,55% 1.33975%,89.64102% 21.33975%,91.06889% 22.33956%,92.30146% 23.57212%,93.30127% 25%,94.03794% 26.5798%,94.48909% 28.26352%,94.64102% 30%,94.64102% 70%,94.48909% 71.73648%,94.03794% 73.4202%,93.30127% 75%,92.30146% 76.42788%,91.06889% 77.66044%,89.64102% 78.66025%,55% 98.66025%,53.4202% 99.39693%,51.73648% 99.84808%,50% 100%,48.26352% 99.84808%,46.5798% 99.39693%,45% 98.66025%,10.35898% 78.66025%,8.93111% 77.66044%,7.69854% 76.42788%,6.69873% 75%,5.96206% 73.4202%,5.51091% 71.73648%,5.35898% 70%,5.35898% 30%,5.51091% 28.26352%,5.96206% 26.5798%,6.69873% 25%,7.69854% 23.57212%,8.93111% 22.33956%,10.35898% 21.33975%);
+    clip-path: polygon(45% 1.33975%, 46.5798% .60307%, 48.26352% .15192%, 50% 0, 51.73648% .15192%, 53.4202% .60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);
+    -webkit-clip-path: polygon(45% 1.33975%, 46.5798% .60307%, 48.26352% .15192%, 50% 0, 51.73648% .15192%, 53.4202% .60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);
     background-color: #5e626b;
 }
+
 .entity-picture--is-hexagon .entity-picture__thumbnail {
     border: unset;
     /* border-radius: 0; */
     width: calc(var(--size) - calc(var(--border-width) * 2));
     height: calc(var(--size) - calc(var(--border-width) * 2)) !important;
     transform: translateY(var(--border-width));
-    clip-path: polygon(45% 1.33975%,46.5798% .60307%,48.26352% .15192%,50% 0,51.73648% .15192%,53.4202% .60307%,55% 1.33975%,89.64102% 21.33975%,91.06889% 22.33956%,92.30146% 23.57212%,93.30127% 25%,94.03794% 26.5798%,94.48909% 28.26352%,94.64102% 30%,94.64102% 70%,94.48909% 71.73648%,94.03794% 73.4202%,93.30127% 75%,92.30146% 76.42788%,91.06889% 77.66044%,89.64102% 78.66025%,55% 98.66025%,53.4202% 99.39693%,51.73648% 99.84808%,50% 100%,48.26352% 99.84808%,46.5798% 99.39693%,45% 98.66025%,10.35898% 78.66025%,8.93111% 77.66044%,7.69854% 76.42788%,6.69873% 75%,5.96206% 73.4202%,5.51091% 71.73648%,5.35898% 70%,5.35898% 30%,5.51091% 28.26352%,5.96206% 26.5798%,6.69873% 25%,7.69854% 23.57212%,8.93111% 22.33956%,10.35898% 21.33975%);
-    -webkit-clip-path: polygon(45% 1.33975%,46.5798% .60307%,48.26352% .15192%,50% 0,51.73648% .15192%,53.4202% .60307%,55% 1.33975%,89.64102% 21.33975%,91.06889% 22.33956%,92.30146% 23.57212%,93.30127% 25%,94.03794% 26.5798%,94.48909% 28.26352%,94.64102% 30%,94.64102% 70%,94.48909% 71.73648%,94.03794% 73.4202%,93.30127% 75%,92.30146% 76.42788%,91.06889% 77.66044%,89.64102% 78.66025%,55% 98.66025%,53.4202% 99.39693%,51.73648% 99.84808%,50% 100%,48.26352% 99.84808%,46.5798% 99.39693%,45% 98.66025%,10.35898% 78.66025%,8.93111% 77.66044%,7.69854% 76.42788%,6.69873% 75%,5.96206% 73.4202%,5.51091% 71.73648%,5.35898% 70%,5.35898% 30%,5.51091% 28.26352%,5.96206% 26.5798%,6.69873% 25%,7.69854% 23.57212%,8.93111% 22.33956%,10.35898% 21.33975%);
+    clip-path: polygon(45% 1.33975%, 46.5798% .60307%, 48.26352% .15192%, 50% 0, 51.73648% .15192%, 53.4202% .60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);
+    -webkit-clip-path: polygon(45% 1.33975%, 46.5798% .60307%, 48.26352% .15192%, 50% 0, 51.73648% .15192%, 53.4202% .60307%, 55% 1.33975%, 89.64102% 21.33975%, 91.06889% 22.33956%, 92.30146% 23.57212%, 93.30127% 25%, 94.03794% 26.5798%, 94.48909% 28.26352%, 94.64102% 30%, 94.64102% 70%, 94.48909% 71.73648%, 94.03794% 73.4202%, 93.30127% 75%, 92.30146% 76.42788%, 91.06889% 77.66044%, 89.64102% 78.66025%, 55% 98.66025%, 53.4202% 99.39693%, 51.73648% 99.84808%, 50% 100%, 48.26352% 99.84808%, 46.5798% 99.39693%, 45% 98.66025%, 10.35898% 78.66025%, 8.93111% 77.66044%, 7.69854% 76.42788%, 6.69873% 75%, 5.96206% 73.4202%, 5.51091% 71.73648%, 5.35898% 70%, 5.35898% 30%, 5.51091% 28.26352%, 5.96206% 26.5798%, 6.69873% 25%, 7.69854% 23.57212%, 8.93111% 22.33956%, 10.35898% 21.33975%);
 }
+
 .entity-picture__thumbnail--no-margins {
     margin: auto;
 }
+
 .entity-picture__thumbnail--text {
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
     line-height: var(--size);
 }
+
 .entity-picture__thumbnail {
     display: flex;
     position: relative;
@@ -205,34 +252,40 @@ footer{
 
 
 
-.tdl-app-bar .tdl-toolbar .md-toolbar .md-toolbar-container--branded-bar > .md-button:first-child {
+.tdl-app-bar .tdl-toolbar .md-toolbar .md-toolbar-container--branded-bar>.md-button:first-child {
     margin-right: 24px;
 }
+
 .md-theme-dark.md-button:not([disabled]):hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
-.md-toolbar .md-toolbar-container > .md-button:first-child {
+
+.md-toolbar .md-toolbar-container>.md-button:first-child {
     margin-left: 0;
     margin-right: 16px;
 }
+
 .md-button.md-icon-button {
     border-radius: 50%;
     height: 40px;
     line-height: 24px;
     margin-top: 12px;
-        margin-right: 6px;
-        margin-left: 6px;
+    margin-right: 6px;
+    margin-left: 6px;
     min-width: 40px;
     padding: 8px;
     width: 40px;
 }
-.md-button, .md-button:focus {
+
+.md-button,
+.md-button:focus {
     outline: none;
 }
+
 .md-button {
     -moz-user-select: none;
     -ms-user-select: none;
-    -webkit-transition: all .4s cubic-bezier(.25,.8,.25,1);
+    -webkit-transition: all .4s cubic-bezier(.25, .8, .25, 1);
     -webkit-user-select: none;
     background: none;
     border: 0;
@@ -255,22 +308,25 @@ footer{
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    transition: all .4s cubic-bezier(.25,.8,.25,1);
+    transition: all .4s cubic-bezier(.25, .8, .25, 1);
     user-select: none;
     vertical-align: top;
     white-space: nowrap;
 }
+
 .md-button.md-icon-button .md-ink-ripple {
     border-radius: 50%;
 }
+
 .md-button .md-ink-ripple {
     background-clip: padding-box;
     border-radius: 2px;
     overflow: hidden;
 }
+
 .md-ink-ripple {
-    -webkit-mask-image: radial-gradient(circle,#fff 100%,#000 0);
-    -webkit-transition: all .3s cubic-bezier(.55,0,.55,.2);
+    -webkit-mask-image: radial-gradient(circle, #fff 100%, #000 0);
+    -webkit-transition: all .3s cubic-bezier(.55, 0, .55, .2);
     bottom: 0;
     left: 0;
     overflow: hidden;
@@ -278,18 +334,23 @@ footer{
     position: absolute;
     right: 0;
     top: 0;
-    transition: all .3s cubic-bezier(.55,0,.55,.2);
+    transition: all .3s cubic-bezier(.55, 0, .55, .2);
 }
-.md-button.md-fab .md-icon, .md-button.md-icon-button .md-icon {
+
+.md-button.md-fab .md-icon,
+.md-button.md-icon-button .md-icon {
     display: block;
 }
-.md-button.md-fab .md-icon, .md-button.md-icon-button .md-icon {
+
+.md-button.md-fab .md-icon,
+.md-button.md-icon-button .md-icon {
     bottom: 0;
     left: 0;
     position: absolute;
     right: 0;
     top: 1px;
 }
+
 .md-icon {
     -webkit-box-align: center;
     align-items: center;
@@ -306,6 +367,7 @@ footer{
     vertical-align: middle;
     width: 24px;
 }
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -321,29 +383,34 @@ footer{
     -moz-font-feature-settings: 'liga';
     -moz-osx-font-smoothing: grayscale;
 }
+
 .md-button.md-icon-button .md-ripple.md-active {
     -webkit-animation-duration: .9s;
     animation-duration: .9s;
 }
+
 .md-button.md-icon-button .md-ink-ripple .md-ripple {
     bottom: 0 !important;
     left: 0 !important;
     right: 0 !important;
     top: 0 !important;
 }
+
 .md-ripple.md-active.md-fadeout {
-    -webkit-transition: all .4s cubic-bezier(.25,.8,.25,1);
+    -webkit-transition: all .4s cubic-bezier(.25, .8, .25, 1);
     -webkit-transition-duration: .6s;
     opacity: 0 !important;
-    transition: all .4s cubic-bezier(.25,.8,.25,1);
-        transition-duration: 0.4s;
+    transition: all .4s cubic-bezier(.25, .8, .25, 1);
+    transition-duration: 0.4s;
     transition-duration: .6s;
 }
+
 .md-ripple.md-active {
-    -webkit-animation: ripple 1s cubic-bezier(.25,.8,.25,1) forwards;
-    animation: ripple 1s cubic-bezier(.25,.8,.25,1) forwards;
-        animation-duration: 1s;
+    -webkit-animation: ripple 1s cubic-bezier(.25, .8, .25, 1) forwards;
+    animation: ripple 1s cubic-bezier(.25, .8, .25, 1) forwards;
+    animation-duration: 1s;
 }
+
 .md-ripple {
     -webkit-transform: scale(0) translateZ(0);
     -webkit-transition: none;
@@ -353,5 +420,5 @@ footer{
     position: absolute;
     transform: scale(0) translateZ(0);
     transition: none;
-    will-change: background-color,opacity,transform,width,height,top,left;
+    will-change: background-color, opacity, transform, width, height, top, left;
 }

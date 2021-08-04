@@ -12,20 +12,8 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <title>Torre Most Sougth Skills</title>
         <script src="/public/js/vendor/jquery-3.6.0.min.js"></script>
-        <script>
-            $(window).on("load", function () {
-                console.log("window loaded");
-                // $.ajax({
-                //     url: "/api/getWeather",
-                //     data: {
-                //         zipcode: 97201
-                //     },
-                //     success: function (result) {
-                //         $("#weather-temp").html("<strong>" + result + "</strong> degrees");
-                //     }
-                // });
-            });
-        </script>
+        <script src="/public/js/skillsfill.js"></script>
+
     </head>
     <body>
         <header>
@@ -150,214 +138,15 @@
         <div class="content">
             <h2>Torre Most Sougth Skills</h2>
             <div class="center">
-                <div class="left">
+                <div class="left section">
                     <h3>Experience required</h3>
-                    <ul>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">1</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">2</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">3</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">4</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">5</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">6</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">7</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">8</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">9</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">10</a>
-                        </li>
+                    <ul id="xpul">
+
                     </ul>
                 </div>
-                <div class="right">
+                <div class="right section">
                     <h3>Potential to Develop</h3>
-                    <ul>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">1</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">2</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">3</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">4</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">5</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">6</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">7</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">8</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">9</a>
-                        </li>
-                        <li>
-                            <div class="category-card__organization entity-picture entity-picture--is-hexagon">
-                                <div class="hexagon-border hexagon-border--no-margins"></div>
-                                <div
-                                    class="entity-picture__thumbnail entity-picture__thumbnail--text entity-picture__thumbnail--no-margins">
-                                    <span>I</span>
-                                </div>
-                            </div>
-                            <a href="">10</a>
-                        </li>
+                    <ul id="ptdul">
                     </ul>
                 </div>
             </div>
