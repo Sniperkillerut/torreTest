@@ -39,7 +39,9 @@ app.use('/skills', skills)
 var getskills = require('./getskills')
 app.use('/getskills', getskills)
 
-var server = app.listen(80, function () {
+const port = process.env.PORT || 80;
+
+var server = app.listen(port, function () {
     var host = server.address().address
     var port = server.address().port
 
